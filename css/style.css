@@ -219,17 +219,7 @@ body {
  _margin-right:0px; /*for IE6 */
 }
 /*================footer===============*/
-footer {
-	position: fixed;
-	left:0;
-	bottom:0;
-	width: 100%;
-	
-	border-top: 1px solid grey;
-	background-color: #FC6;
-	text-indent: 10px;
-	margin: 5% auto;
-	}
+
 
 
 
