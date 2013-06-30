@@ -7,17 +7,21 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive-nav.css">
+<script src="js/responsive-nav.js"></script>
 </head>
 <body>
-	   <div class="container-fluid">
-	<header class="row-fluid">        
-    	<h1 class="span12"><img src="img/logo.jpg" alt="Page intro graphic" /></h1>
-        <p>"The most unique interaction with exotic animals in Orlando!" </p>
-    </header>
-    
-	<section class="row-fluid">
-    	<aside class="span2">
-        	<nav id="mainnav">
+	<div class="container-fluid">
+			<header class="row-fluid">        
+    			<div class="span12 hero-unit" ><a href="index.html"><img src="img/logo.jpg" alt="Page intro graphic" /></a><img src="img/index.png" alt=""/>
+        			<aside class="pull-right"><a href="https://www.facebook.com/pages/Exotic-Experience/203469063013499"><img src="img/facebook.png" class="pull-right" alt=""></a><a href="http://www.youtube.com/user/4u2roos?feature=watch"><img src="img/twitter.png" class="pull-right" alt=""/></a>
+        			</aside>
+        			<p>"The most unique interaction with exotic animals in Orlando!" </p>        
+    			</div>
+    		</header>
+<section class="row-fluid">
+    <aside class="span2">
+        <div id="nav">
     		<ul class="nav nav-list">
             	<li class="nav-header">Welcome</li>
 				<li><a href="index.html">Home</a></li>
@@ -27,46 +31,100 @@
 				<li><a href="store.html">Exotic Store & Donation</a></li>
 			    <li class="active"><a href="contact.html">Contact Us</a></li>
 			</ul>
-     		</nav> 
-            </aside>
-            <section class="span6 offset1">
-         		 <h1>Contact Us</h1>
-				 <p>We would love to hear from you!</p>
-        	</section>             	
-    </section>
-	 <section class="row-fluid">
-    	<article class="span6 offset3">
-        <table>
+     	</div> 
+      </aside>
+            
+<section class="span6 offset1">
+       	 <h1 id="f">Contact Us</h1>
+   		 <p>We would love to hear from you!</p>
+        <ul class="thumbnails pull-right">
+            <li class="span5">
+            <a href="img/poppi5.jpg" class="thumbnail">
+            <img src="img/poppi5.jpg" data-src="holder.js/300x200" alt="">
+            </a>
+            </li>
+        </ul> 
+</section>  
+</section>
+	<div id="featured">
+         <a href="featured.html"><img src="img/featured.jpg" alt="" class="pull-right"></a>
+    </div>
+<section class="row-fluid">
+    <article class="span6 offset3">
+       <table class="table table-hover">
             <tr>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Address</th>
             </tr>
-            <tr>
-                <td><a href="mailto:example@example.comlesurt99@aol.com">lesurt99@aol.com</a></td>
+            
+               <tr class="info">
+                <td><a href="mailto:example@example.com">lesurt99@aol.com</a></td>
                 <td>(407) 383-6766</td>
                 <td>Orlando, FL 32833</td>
             </tr>
-        </table>
-	
-            <h3>Send us feedback!</h3>
-            <form method="get" action="simpleform.html">
+            
+    	</table>
+     
+<section id="form">
+      <h3>Send us feedback!</h3>
+         <form method="get" action="simpleform.html">
             <fieldset>
                 <legend>Message</legend>
                 <label>Please tell us about your
                 Exotic Experience:</label>
                 <p><textarea name="hobbies" rows="7" cols="50" id="hobbies"></textarea></p>
             </fieldset>
-            <p><input type="submit"/></p>
-        </form>
-        </article>   
-    </section>
+            <a href="mailto:example@example.com" class="btn btn-warning btn-medium pull-right">Submit</a>
+         </form>
+ </section>
+ </article>
+ </section>
+ <section class="row-fluid">
+ 	<div class="span6 offset3">
+      <div class="row-fluid">
+        <aside id="testimonials">
+     	   <h3>Testimonials</h3>
+     	   	<blockquote class="text-info">
+        		"We LOVE Exotic Experience! It's our happy place!"
+     	   		<small><cite title="Source Title">Smith Family</cite></small>
+        	</blockquote>
+        
+            <blockquote class="text-info">
+                "You will be amazed at of the beautiful, loving animals! Can’t wait to go back!"
+                <small><cite title="Source Title">Paula &amp; John</cite></small>
+            </blockquote>
+        
+            <blockquote class="text-info">
+                "My Birthday was the best thanks to Exotic Experience! Thank You!"
+                <small><cite title="Source Title">Riley age 8</cite></small>
+            </blockquote>  
+        </aside>
+      </div>
+    </div>
+</section> 
 </div>	
-	 <footer class="span2 offset1">
-     	&copy; 2013 Exotic Experience Website by: Ali Ki 
-     </footer>
+	
+<div id="stickey_footer">
+ <!-- Begin Footer Menu -->
+    <ul id="footer_menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="featured.html">Featured Friends &amp; Events</a>
+         <li><a href="reservation.html">Birthdays &amp; Reservations</a>
+         <li><a href="meet.html">Meet the Exotic's</a>
+         <li><a href="store.html">Exotic Store &amp; Donation</a>
+         <li><a href="contact.html"><span>Contact Us</span></a>
+     </ul>
+      
+  &copy; 2013 Exotic Experience All Rights Reserved
+ Website by: Ali Ki 
+  
+</div>
  
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+  var navigation = responsiveNav("#nav");
+</script>
 </body>
 </html>

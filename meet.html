@@ -7,18 +7,23 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive-nav.css">
+<script src="js/responsive-nav.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-	<header class="row-fluid">        
-    	<h1 class="span12"><img src="img/logo.jpg" alt="Page intro graphic" /></h1>
-        <p>"The most unique interaction with exotic animals in Orlando!" </p>
-    </header>
+<div class="container-fluid">
+   <header class="row-fluid">        
+    <div class="span12 hero-unit" ><a href="index.html"><img src="img/logo.jpg" alt="Page intro graphic" /></a><img src="img/index.png" alt=""/>
+      <aside class="pull-right"><a href="https://www.facebook.com/pages/Exotic-Experience/203469063013499"><img src="img/facebook.png" class="pull-right"      alt=""></a><a href="http://www.youtube.com/user/4u2roos?feature=watch"><img src="img/twitter.png" class="pull-right" alt=""/></a>
+      </aside>
+      <p>"The most unique interaction with exotic animals in Orlando!" </p>
     </div>
-	<section class="row-fluid">
-    	<aside class="span2">
-        	<nav id="mainnav">
-    		<ul class="nav nav-list">
+   </header>
+	
+<section class="row-fluid">
+  <aside class="span2">
+      <div id="nav">
+    	<ul class="nav nav-list">
             	<li class="nav-header">Welcome</li>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="featured.html">Featured Friends & Events</a></li>
@@ -26,30 +31,39 @@
 				<li class="active"><a href="meet.html">Meet the Exotic's</a></li>
 				<li><a href="store.html">Exotic Store & Donation</a></li>
 			    <li><a href="contact.html">Contact Us</a></li>
-			</ul>
-     		</nav>        
-     	</aside>
+		</ul>
+      </div>
+              
+      <div id="birthday">        
+     	 <a href="reservation.html"><img src="img/birthday1.jpg" class="pull-left" alt="birthday"></a>
+      </div>        
+  </aside>
+              
+      <div id="donation">
+         <a href="store.html"><img src="img/donation.jpg" alt="" class="pull-right"></a>
+      </div>  
+ 
  <article class="span6 offset1">
-  	<h1>Newest Additions</h1>
-    <img src="img/charlie.jpg" alt="Baby Charlie!">
-	<h2>Meet the Exotic's</h2>
-        	<p class="caption">They can't wait to meet you!</p>
+  	<h1 id="f">Meet the Exotic's</h1>  
+    <a href="http://www.youtube.com/watch?v=Vjc7b1m97EQ&amp;feature=youtu.be"><img src="img/charlie.jpg" alt="Baby Charlie!"></a>
+ </article>
+   
 <!-- images -->
+
 <div class="container-fluid">
   	<div class="row-fluid">
-    	<div class="span12">
+    	<div class="span5 offset2">
         	<div id="kangaroocarousel" class="carousel slide">
+               <h3 class="text-success">Meet the Kangaroo's</h3>
             	<div class="carousel-inner">
         <div class="item active"><img src="img/lovebugbegging.jpg" alt="">
         	<div class="carousel-caption">
             	<h4>Meet Love Bug the Western Grey Kangaroo!</h4>
-                <p>Love Bug, a.k.a. "Bug," is a one-year-old male Western gray 			kangaroo who will play with anyone and anything put in front of him.
-He is a stickler on grooming and believes all the animals need a bit of that!  He is a sweetheart and loves to hug people and other animals.</p>
-     	 			
-     </div>
-</div>
+                <p>Love Bug, a.k.a. "Bug," is a one-year-old male Western gray kangaroo who will play with anyone and anything put in front of him. He is a stickler on grooming and believes all the animals need a bit of that!  He is a sweetheart and loves to hug people and other animals.</p>	 			
+            </div>
+        </div>
         <div class="item"><img src="img/leslielovebug.jpg" alt="">
-        <div class="carousel-caption">
+        	<div class="carousel-caption">
             	<h4>Western Grey Kangaroo Quick Facts</h4>
                 <p>Large and very common, found across southern part of Australia. They have thick, coarse fur and range in color from pale grey to brown. Feeding at night mainly on grasses but sometimes leafy shrubs and low trees.</p>
             </div>
@@ -61,7 +75,7 @@ He is a stickler on grooming and believes all the animals need a bit of that!  H
             </div>
         </div>
         <div class="item"><img src="img/lovebuglemur.jpg" alt="">
-        <div class="carousel-caption">
+        	<div class="carousel-caption">
             	<h4>Western Grey Kangaroo Quick Facts</h4>
                 <p>Mature males have a distinctive curry-like odor which gives them their nicknames:  Stinker! Males are up to twice as large as females</p>
             </div>
@@ -72,19 +86,286 @@ He is a stickler on grooming and believes all the animals need a bit of that!  H
                 <p>They are macropods:  The word "macropod" is a Greek word meaning long-footed. A macropod is a marsupial with long hind legs, which tend to use hopping and jumping as their main means of locomotion (movement).</p>
             </div>
         </div>
-          		</div><!-- end kangaroocarousel inner -->
-                <a class="left carousel-control" href="#kangaroocarousel" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#kangaroocarousel"	data-slide="next">&rsaquo;</a>
-          	</div><!-- end kangaroocarousel -->
-    	</div><!-- end span12 -->
-  	</div><!-- end row --> 
+        <div class="item"><img src="img/owen1.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Owen!</h4>
+                <p>Owen (age unknown) is a male Eastern grey kangaroo who was rescued three years ago. While he does play much, he is quite content watching the antics.</p>
+            </div>
+        </div>
+        
+      <div class="item"><img src="img/owen2.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Eastern Grey Kangaroo Quick Facts</h4>
+                <p>Also known as "great grey kangaroos" or "Forester kangaroos" population of several 	                million.
+                Males typically weigh around 145 lbs. and stand almost 6.6 feet tall.
+                They are the second largest and heaviest living marsupial and native land mammal in                Australia. The largest recorded speed of any kangaroo was 40 mph by a female eastern gray kangaroo</p>
+            </div>
+        </div>
+     </div><!-- end kangaroocarousel inner -->
+        		<a class="left carousel-control" href="#kangaroocarousel" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#kangaroocarousel"	data-slide="next">&rsaquo;</a>
+  </div><!-- end kangaroocarousel -->
+
+<!-- lemur images -->
+
+<div id="lemur" class="carousel slide">
+	<h3 class="text-info">Meet the Lemur's</h3>
+   <div class="carousel-inner">
+      <div class="item active"><img src="img/charlie1.jpg" alt="">
+         <div class="carousel-caption">
+            	<h4>Meet Charlie the Baby Brown Lemur!</h4>
+                <p>He's finally here!  Charlie is just the cutest little lemur.  He is getting to know his other lemur buddies.  Charlie also has a cross on his head--very cool. Check out the youtube video by clicking the above photo of Charlie. </p>    	 			
+          </div>
+      </div>
+<div class="item"><img src="img/charliw2.jpg" alt="">
+ 	<div class="carousel-caption">
+            	<h4>Brown Lemur Quick Facts</h4>
+                <p>Their life span can be as long as 30+ years. Lives in western and eastern part of the island of Madagascar. Their mating season is May and June; gestation period if 120 days Single births are most common, but twins have been reported</p>     	 			
+     </div>
+</div>
+
+     <div class="item"><img src="img/lolli4.jpg" alt="">
+     	<div class="carousel-caption">
+            	<h4>Meet Lolli the Ruffed Lemur</h4>
+                <p>Lolli is a two-year-old tri-colored female ruffed lemur. She is super sweet and gentle! She loves to play and have her belly and armpits scratched. NOTE TO GUESTS: Ruffed lemurs are critically endangered; and a black and white crossed with a red ruffed would not happen in the wild, making Lolli one of a kind and very unique.</p>
+     	 			
+         </div>
+     </div>
+     <div class="item"><img src="img/lolli1.jpg" alt="">
+         <div class="carousel-caption">
+            	<h4>Tri-Colored Ruffed Lemur Quick Facts</h4>
+                <p>They have large litters, build nests for their newborns and carry them by mouth endemic to the island of Madagascar. They are the largest extant members of the family Lemuridae, range in length from 3.3-3.9 feet and weigh between 6.8 and 9.0 pounds. They are arboreal:  spend most of their time high in the trees.
+</p>
+         </div>
+     </div>   
+     <div class="item"><img src="img/lolli2.jpg" alt="">
+         <div class="carousel-caption">
+            	<h4>Tri-Colored Ruffed Lemur Quick Facts</h4>
+                <p>They are diurnal: active exclusively in daylight hours diet consists mainly of fruit but sometimes nectar, flowers, leaves and seeds. They are known for their loud, raucous calls but not usually heard at night. They mature rapidly and can live in captivity up to 36 years. Their population is decreasing rapidly--an 80% decrease in the last 27 years</p>
+          </div>
+      </div>
+      <div class="item"><img src="img/lolli3.jpg" alt="">
+          <div class="carousel-caption">
+            	<h4>Lolli's News</h4>
+                <p>Look for babies in the future!</p>
+          </div>
+      </div>
+      <div class="item"><img src="img/poppi.jpg" alt="">
+          <div class="carousel-caption">
+            	<h4>Meet Poppi the Ruffed Lemur!</h4>
+                <p>Poppi is a one-year-old male black and white ruffed lemur.  What can I say about Poppi, other than he is a TRIP!!  He will play with anyone and has never met a stranger.
+Be prepared to be licked and groomed and have a lemur in your lap when you come visit!  He is a character for sure!</p>
+          </div>
+       </div>
+        
+       <div class="item"><img src="img/poppi7.jpg" alt="">
+          <div class="carousel-caption">
+            	<h4>Black & White Ruffed Lemur Quick Facts</h4>
+                <p> They are the more endangered of the two species of ruffed lemurs. Endemic to the island of Madagascar. They are the largest extant members of the family Lemuridae</p>
+           </div>
+        </div>
+        <div class="item"><img src="img/poppi5.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Black & White Ruffed Lemur Quick Facts</h4>
+                <p> Their population is decreasing rapidly--an 80% decrease in the last 27 years. Both males and females are always both black and white with black on their abdomens, tails, hands, feet, inner limbs, foreheads, faces and crowns; their fur is white on the sides, back, hind limbs and hindquarters</p>
+            </div>
+        </div>
+        
+        <div class="item"><img src="img/poppi8.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Black & White Ruffed Lemur Quick Facts</h4>
+                <p>They are arboreal:  spend most of their time high in the trees. They are diurnal:  active exclusively in daylight hour. Diet consists mainly of fruit but sometimes nectar, flowers, leaves and seeds. They are known for their loud, raucous calls but not usually heard at night</p>
+            </div>
+        </div>   
+        
+        <div class="item"><img src="img/liam4.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Liam the Ring-Tailed Lemur!</h4>
+                <p>Liam is a three-year-old male ring-tailed lemur, a.k.a. "Boss."  He is my personal pet and sleeps in the house with me, though he feels it is his job to protect not only me, but the other animals, as well.  He loves them all and does NOT take kindly to other humans coming in to pet ANYONE!  Unfortunately, he will be caged during guest visits, though he is fun to watch in the videos.</p>
+            </div>
+        </div> 
+        
+        <div class="item"><img src="img/liam5.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Ring-Tailed Lemur Quick Facts</h4>
+                <p>Live in groups known as troops which include 6-30 animals but average 17. ENDANGERED because their habitat of sparse, dry forests is vanishing. Average life span in the wild is 18 years</p>
+            </div>
+        </div> 
+        
+        <div class="item"><img src="img/liam6.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Ring-Tailed Lemur Quick Facts</h4>
+                <p>Native to Madagascar and some tiny neighboring islands have a long, boldly striped, black-and-white tail that can't be used for gripping. Diet consists of mostly fruit, but also eat insects, leaves, flowers, tree bark and sap.
+</p>
+            </div>
+        </div> 
+        
+        
+      <div class="item"><img src="img/liam7.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Ring-Tailed Lemur Quick Facts</h4>
+                <p>Adults weigh an average of 4.9 lbs with a body length between 15 and 18 inches, not including its tail, which is between 22 and 25 inches.
+</p>
+            </div>
+       </div>     
+   </div><!-- end lemur inner -->
+                <a class="left carousel-control" href="#lemur" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#lemur"	data-slide="next">&rsaquo;</a>
+</div><!-- end lemur -->
+            
+            
+<!-- exotic images -->            
+            
+ <div id="exotic" class="carousel slide">
+				<h3 class="text-warning">Meet Kiwi &amp; Mojo</h3>
+	  <div class="carousel-inner">
+        <div class="item active"><img src="img/kiwi2.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Kiwi the Kinkajou!</h4>
+                <p>Kiwi is a three-year-old Kinkajou.  She is very sweet; and though she is nocturnal, she will come out for a few minutes to say hello and sit on your shoulder before returning to her cave.  She may even show you her three-inch-long tongue when she yawns!</p>    	 			
+            </div>
+         </div>
+        
+        <div class="item"><img src="img/kiwi.jpg" alt="">
+            <div class="carousel-caption">
+            	<h4>Kinkajou Quick Facts</h4>
+                <p>Also known as the "honey bear". Rainforest mammal and is nocturnal, sleeps during the day and avoids direct sunlight. May be mistaken for a ferret or monkey, but not closely related to either.
+From the genus Potos, of which there are seven species native to Central America and South America</p>
+            </div>
+        </div>
+        <div class="item"><img src="img/kiwi3.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Kinkajou Quick Facts</h4>
+                <p>Can live up to 40 years in captivity, with the average being 23 years.
+Adult body length is 16-24 inches, not including a tail length of 16-24 inches.
+Has a prehensile tail, large eyes, small ears, short legs with sharp claws on each of five toes.
+Has a slender, five-inch extrudable tongue to lick nectar from flowers and obtain fruit.
+</p>
+            </div>
+        </div>
+        <div class="item"><img src="img/kiwi4.jpg" alt="">
+           <div class="carousel-caption">
+                 <p>See Kiwi's long toung!</p>
+           </div>
+        </div>
+        <div class="item"><img src="img/mojo1.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Mojo the Muntjac!</h4>
+                <p>Mojo is a two-year-old Muntjac deer buck and is quite playful when it starts to cool down in the afternoon. If he sees a game of some sort starting up, he is in the middle of the action.  He is best buddies with Bug.</p>
+            </div>
+        </div>
+        
+        <div class="item"><img src="img/mojox.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Muntjac Quick Facts</h4>
+                <p>Also known as barking deer and Mastreani deer from the genus Muntiacus, of which there are 12 species. Native to South Asia</p>
+            </div>
+        </div>
+        
+        <div class="item"><img src="img/mojo3.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Muntjac Quick Facts</h4>
+                <p>Introduced to England around 1925 and expanded rapidly. The males' "tusks" are downward-pointing canine teeth</p>
+            </div>
+        </div>
+    </div><!-- end exotic inner -->
+                <a class="left carousel-control" href="#exotic" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#exotic"	data-slide="next">&rsaquo;</a>
+</div><!-- end exotic -->
+            
+            
+ <!-- domestic images -->           
+            
+ <div id="dom" class="carousel slide">
+         <h3 class="text-error">Meet the Domestic Pal's</h3>
+       <div class="carousel-inner">
+          <div class="item active"><img src="img/domestic1.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Come join the Love!</h4>
+            </div>
+          </div>
+       <div class="item"><img src="img/dozerx.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Dozer!</h4>
+                <p>Dozer is a nine-year-old Lab/Beagle cross that loves EVERYONE! He loves to be touched by ANYONE and ANYTHING! He loves to play with our exotic animals! </p>     	 			
+     		</div>
+		</div>
+        <div class="item"><img src="img/kcdomestic.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet K.C.</h4>
+                <p>K.C. is an eight-year-old tortoise-shell female cat. She LOVES kangaroo joeys and babysits them when they are in their pouches!</p>
+            </div>
+        </div>
+        <div class="item"><img src="img/keeva.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Keeva!</h4>
+                <p>Keeva is a three-month-old Irish Wolfhound puppy--she is all puppy right now...and BIG! Breed name originates from its purpose--wolf hunting with dogs. Original wolfhound breed is very old,
+modern-day dogs are results of outcrosses with Great Dane, Borzoi and others. Average lifespan is seven years, but varies between six and 10 years and they are the tallest of dog breeds but very easygoing.They form strong bonds with family--very loyal, affectionate, patient and devoted.
+</p>
+            </div>
+        </div>
+        <div class="item"><img src="img/pig.jpg" alt="">
+        <div class="carousel-caption">
+            	<h4>Meet Pig Pig</h4>
+                <p>Pig Pig is a one-year-old mini pot-bellied pig. She is becoming friends with Bug since she found out he loves to groom--and if she rolls over she will get a good belly scratch!  She may let you pet her . . . and you should feel privileged if this happens!</p>
+            </div>
+        </div>
+        <div class="item"><img src="img/jeff.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Jeffery the donkey!</h4>
+                <p>He's a sweet heart and would love to join you at you're event.</p>
+            </div>
+        </div>
+        
+        <div class="item"><img src="img/sam.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Meet Sam the mini horse!</h4>
+                <p>Sam would love to meet you.</p>
+            </div>
+        </div>
+        
+        <div class="item"><img src="img/samjeff.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Invite us both to your event!</h4>
+            </div>
+        </div>
+        
+        <div class="item"><img src="img/zebra.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Don't forget all the new friends you can meet at our farm!</h4>
+            </div>
+        </div>
+        <div class="item"><img src="img/domestic2.jpg" alt="">
+        	<div class="carousel-caption">
+            	<h4>Kiss a bunny today!</h4>
+            </div>
+        </div>
+ 	</div><!-- end lemur inner -->
+                <a class="left carousel-control" href="#dom" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#dom"	data-slide="next">&rsaquo;</a>
+  </div><!-- end lemur -->
+</div><!-- end span12 -->
+</div><!-- end row --> 
 </div><!-- end container --> 
-</article>
+
 </section>	
 	
-	  <footer class="span2 offset10">
-     	&copy; 2013 Exotic Experience Website by: Ali Ki 
-     </footer>
+	 <div id="stickey_footer">
+         <!-- Begin Footer Menu -->
+        <ul id="footer_menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="featured.html">Featured Friends &amp; Events</a>
+             <li><a href="reservation.html">Birthdays &amp; Reservations</a>
+             <li><a href="meet.html"><span>Meet the Exotic's</span></a>
+             <li><a href="store.html">Exotic Store &amp; Donation</a>
+             <li><a href="contact.html">Contact Us</a>
+         </ul>
+  
+ &copy; 2013 Exotic Experience All Rights Reserved
+ Website by: Ali Ki 
+  
+	</div>
+</div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+  var navigation = responsiveNav("#nav");
+</script>
 </body>
 </html>

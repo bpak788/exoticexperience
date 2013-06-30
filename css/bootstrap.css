@@ -223,7 +223,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -3959,7 +3959,9 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #3CC;
+  color: #ffffff;
+  font-size:1em;
 }
 
 .nav > li > a > img {
@@ -4007,7 +4009,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:focus {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: green;
 }
 
 .nav-list [class^="icon-"],
@@ -6003,7 +6005,7 @@ a.badge:focus {
 }
 
 .carousel-inner > .active {
-  left: 0;
+  center: 0;
 }
 
 .carousel-inner > .next,

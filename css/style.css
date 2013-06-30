@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+/*======================html=================*/
+
+html { 
+  background: url(../img/bg.jpg) repeat-x center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*======================body=================*/
+
+body {
+	margin-bottom: 20%;
+	}
+
+/*======================header=================*/
+.hero-unit {
+	background: white;
+	padding: 1%;
+	text-align: center;
+	}
+.hero-unit aside {
+	color: gray;
+	margin-right: 3.5%;
+	}
+.hero-unit p {
+	color: gray;
+	float: left;
+	clear: left;
+	margin: .5% 3.5%;
+	}
+	
+#f {
+	margin-bottom: 5%;
+	}
+
+/*=============kangaroo===========*/	
+	#kangaroocarousel h3 {
+		margin-top: 7%;
+		border-bottom: 2px solid #248000; 
+		}
+/*=============lemur===========*/
+	#lemur h3 {
+		margin-top: 7%;
+		border-bottom: 2px solid #3C86B0;
+		}
+/*=============kiwi===========*/
+	#exotic h3 {
+		margin-top: 7%;
+		border-bottom: 2px solid #C09948;
+		}		
+/*=============dom===========*/
+	#dom h3 {
+		margin-top: 7%;
+		border-bottom: 2px solid #B74D46;
+		}		
+/*=============new===========*/		
+#new {
+	margin-left:15%;
+	}		
+/*=============recent===========*/
+#recent {
+  margin-top: 7%;
+  border-top: 2px solid #248000;
+  padding-top: 3%;
+  width: 90%;
+  margin: 5% auto;
+}
+/*=============birthday============*/
+#birthday {
+	margin: 40% auto 0 auto;
+	}	
+#birthday1{
+	margin-left:15%;
+	margin-bottom: 7%;
+	}
+#birthday2{
+	margin-left:30%;
+	margin-bottom: 2%;}
+	
+/*=============calendar============*/
+#calendar { margin-top: 7%;
+	border-top: 2px solid #248000;
+	padding-top: 2%;
+}
+
+/*=============donation============*/
+#donation1 {
+	width:80%;
+	margin-top:7%;
+	border-top: 2px solid #248000;
+	margin-left: %;
+	}
+/*=========sticky footer  ==================*/	
+#stickey_footer { /* This will make your footer stay where it is */
+ background: none repeat scroll 0 0 #188000;
+ border: 1px solid rgba(0, 0, 0, 0.3);
+ bottom: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ color: white;
+ text-align: center;
+ height: 40px;
+ left: 50%;
+ margin: 0 auto 0 -490px;
+ padding: 0 10px;
+ position: fixed;
+ text-shadow: 1px 1px 1px #666;
+ width: 960px;
+}
+/* border curves */
+#stickey_footer {
+ -moz-border-radius: 10px 10px 0px 0px;
+ -webkit-border-radius: 10px 10px 0px 0px;
+ border-radius: 10px 10px 0px 0px;
+}
+  
+/* hover effect */
+#stickey_footer:hover {
+ background: none repeat scroll 0 0 #188000;
+}
+  
+/* shadow for the footer*/
+#stickey_footer {
+ -moz-box-shadow:0px 0px 11px #191919;
+ -webkit-box-shadow:0px 0px 11px #191919;
+ box-shadow:0px 0px 11px #191919;
+}
+  
+#footer_menu {
+ margin: 0;
+ padding: 0;
+ width:auto;
+}
+  
+#footer_menu li {
+ list-style: none;
+ float: left;
+ font-size:12px;
+ padding: 12px 14px 14px 14px;
+ border-right:1px solid rgba(0, 0, 0, 0.4);
+ background: rgba(0, 0, 0, 0.1);
+}
+  
+#footer_menu .imgmenu {
+ padding:5px 8px 3px 14px;
+ float:left;
+ background:url("images/home.png") 13px 5px no-repeat;
+ width:36px;
+ height:30px;
+ border:none;
+ border-right:1px solid rgba(0, 0, 0, 0.4);
+ cursor:pointer;
+}
+  
+#footer_menu li:hover {
+ background:#202020; /* Fallback color for old browsers */
+ background: rgba(0, 0, 0, 0.3);
+}
+  
+#footer_menu .imgmenu:hover {
+ background:url("images/home_hover.png") 13px 5px no-repeat;
+}
+  
+#footer_menu li a {
+ display: block;
+ color: #cccccc;
+ text-decoration: none;
+}
+  
+#footer_menu li a:hover {
+ color: #ffffff;
+}
+  
+#footer_menu li span {
+ display:none;
+}
+  
+#stickey_footer #social_icons {
+ float:right; /* social icons positions */
+ width:auto;
+ margin:5px 15px 0px;
+ padding:0px;
+ overflow:hidden;
+}
+  
+#stickey_footer #social_icons li {
+ margin-right:12px; /* 12px is the space between each one of them */
+ float:left;
+ width:24px;
+ padding:0px;
+ height:32px;
+ list-style:none;
+ _margin-right:0px; /*for IE6 */
+}
+/*================footer===============*/
+footer {
+	position: fixed;
+	left:0;
+	bottom:0;
+	width: 100%;
+	
+	border-top: 1px solid grey;
+	background-color: #FC6;
+	text-indent: 10px;
+	margin: 5% auto;
+	}
+
+
+
+/*================button===============*/
+#button {
+	margin: 2% auto;
+	}	
+
+#events {
+	margin: 6% 6% 5% 6%;
+	}
+
+	/*Tablet Portrait size to standard 960 (devices and browsers) */
+	@media screen and (min-width:768px) and (max-width:959px) {
+	.hero-unit p {display: none;}			
+					
+	
+	}
+	
+	
+	
+/*============ Mobile Landscape Size to Tablet Portrait (devices and browsers)=======================*/
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.hero-unit p {display: none;}
+	#birthday {display:none;}
+	#featured {display:none;}
+	#donation {display:none;}
+	#events {margin: 0;}
+	#new {margin-left:0;}
+	#birthday1{
+	margin-left:0;
+	margin-bottom: 1%;
+	}
+#birthday2{
+	margin-left:0;
+	margin-bottom: 1%;}
+	}
+	
+		/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	.hero-unit p {display: none;}
+	#birthday {display:none;}
+	#featured {display:none;}
+	#donation {display:none;}
+	#events {margin: 0;}
+	#new {margin-left:0;}
+	#birthday1{
+	margin-left:0;
+	margin-bottom: 1%;}
+	#birthday2{
+	margin-left:0;
+	margin-bottom: 1%;}
+	#recent {
+		margin-left: 0;
+		}
+	}

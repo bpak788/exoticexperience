@@ -4,20 +4,29 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exotic Birthday & Reservation's</title>
+
+<link rel="stylesheet" type="text/css" media="screen"
+ href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="css/responsive-nav.css">
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/responsive-nav.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
+  <div class="container-fluid">
 	<header class="row-fluid">        
-    	<h1 class="span12"><img src="img/logo.jpg" alt="Page intro graphic" /></h1>
-        <p>"The most unique interaction with exotic animals in Orlando!" </p>
-    </header>
+      <div class="span12 hero-unit" ><a href="index.html"><img src="img/logo.jpg" alt="Page intro graphic" /></a><img src="img/index.png" alt=""/>
+        <aside class="pull-right"><a href="https://www.facebook.com/pages/Exotic-Experience/203469063013499"><img src="img/facebook.png" class="pull-right" alt=""></a><a href="http://www.youtube.com/user/4u2roos?feature=watch"><img src="img/twitter.png" class="pull-right" alt=""/></a>
+        </aside>
+          <p>"The most unique interaction with exotic animals in Orlando!" </p>   
+      </div>
+   </header> 
     
-	<section class="row-fluid">
+<section class="row-fluid">
     	<aside class="span2">
-        	<nav id="mainnav">
+          <div id="nav">
     		<ul class="nav nav-list">
             	<li class="nav-header">Welcome</li>
 				<li><a href="index.html">Home</a></li>
@@ -27,58 +36,109 @@
 				<li><a href="store.html">Exotic Store & Donation</a></li>
 			    <li><a href="contact.html">Contact Us</a></li>
 			</ul>
-     		</nav>         
+     	  </div>      
      	</aside>
         
-        <article class="span6 offset1">
-		<h1>Exotic Birthday's & Reservation's</h1>
+        <div id="donation">
+         <a href="store.html"><img src="img/donation.jpg" alt="" class="pull-right"></a>
+        </div>  
+        
+        <article class="span7 offset1">      
+		    <h1 id="f">Exotic Birthday's & Reservation's</h1>
 			<p>Your just a few clicks away from your Exotic Encounter!</p>
-		</article>
-	</section>
-	
-		<section class="row-fluid">
-    		<article class="span6 offset3">
-				<h2>Birthday Packages</h2>
-				<p>We offer Birthday Packages with a variety of options to meet your needs.</p>
-             </article>
-         </section>
-      <section class="row-fluid">
-    	<div class="span6 offset3">
+			<img src="img/birthday.jpg" alt="birthday picture" />
+        </article>
+</section>
+	       
+<section class="row-fluid">
+    	<article class="span6 offset3">
+             <h2>Birthday Packages</h2>
+			 <p>We offer Birthday Packages with a variety of options to meet your needs.</p>
+         </article>
+</section>
+    
+<section class="row-fluid">
+    	<div class="span7 offset3">
         	<div class="row-fluid">
             	<!--Nested rows -->
                 <div id="pkg1" class="span6">
                 	<h3>Package A:</h3>
-                    <p>We'll bring the Party! Just select a day and time, we'll 		                     be there!</p>
+                    <p>We'll bring the Party! Just select a day and time, we'll be there!</p>
                     <p><em>Prices based in 30 min increments.</em></p>
                  </div>
                 
-                 <div id="about" class="span6">
+                 <div id="pkg2" class="span6">
                 	<h3>Package B:</h3>
-                    <p>Leave the mess with us! Want to have an Exotic Experience                    at our                    farm?
-				    No problem, and we will provide the favors and decorations!                    Reserve 	                     you're day below!</p>
-                    <p><em>Priced at individual rates.<a href="contact.html">                    Please call for birthday consult</a></em></p>
+                    <p>Leave the mess with us! Want to have an Exotic Experience at our farm?
+				    No problem, and we will provide the favors and decorations! Reserve you're day below!</p>
+                    <p><em>Priced at individual rates.<a href="contact.html"> Please call for birthday consult</a></em></p>
 				   <p>***Please check calendar below for available dates!***</p>
                 </div>
-                </div>
-                 <aside>
+             </div>
+             
+                 <aside id="calendar">
 					<h3>Exotic Experience's Calendar Availability</h3>
 					<p>Please make a selection</p>
-				</aside>
-     			<p><a href="checkout.html" class="btn btn-selection btn-large pull-right">Submit</a></p>
+				 </aside>	
      	</div>
-     </section>
+</section>	
+    
+<section class="row-fluid">
+     <div class="span6 offset3">
+    <div class="row-fluid">
+	      <div id="datetimepicker" class="input-append date">
+      			<input type="text">
+      			<span class="add-on">
+        		<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      			</span>
+    		</div>
+            <img src="img/balloon.jpg" class="pull-right" alt="balloon">
+                
+            <script type="text/javascript"
+             src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+            </script> 
+            <script type="text/javascript"
+             src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+            </script>
+            <script type="text/javascript"
+             src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+            </script>
+            <script type="text/javascript"
+             src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+            </script>
+                 <script type="text/javascript">
+              $('#datetimepicker').datetimepicker({
+                format: 'dd/MM/yyyy hh:mm:ss',
+                language: 'en'
+              });
+            </script>
+        
+    		<p><a href="checkout.html" class="btn btn-selection btn-large pull-left">Submit</a></p>
+       </div>
+    </div>
+ </section>
+</div>
 	
-		
-			<!--Calendar will go here-->
-	</div>
-	
-	
-	
-	  <footer class="span2 offset1">
-     	&copy; 2013 Exotic Experience Website by: Ali Ki 
-     </footer>
+<div id="stickey_footer">
+ <!-- Begin Footer Menu -->
+    <ul id="footer_menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="featured.html">Featured Friends &amp; Events</a>
+         <li><a href="reservation.html"><span>Birthdays &amp; Reservations</span></a>
+         <li><a href="meet.html">Meet the Exotic's</a>
+         <li><a href="store.html">Exotic Store &amp; Donation</a>
+         <li><a href="contact.html">Contact Us</a>
+    </ul>
+  
+ &copy; 2013 Exotic Experience All Rights Reserved
+ Website by: Ali Ki 
+</div>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>	
+<script>
+  var navigation = responsiveNav("#nav");
+</script>
+
 </body>
 </html>

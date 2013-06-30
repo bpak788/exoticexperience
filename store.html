@@ -7,39 +7,154 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive-nav.css">
+<script src="js/responsive-nav.js"></script>
 </head>
 	<body>
-    <div class="container-fluid">
-	<header class="row-fluid">        
-    	<h1 class="span12"><img src="img/logo.jpg" alt="Page intro graphic" /></h1>
-        <p>"The most unique interaction with exotic animals in Orlando!" </p>
-    </header>
+ 		<div class="container-fluid">
+			<header class="row-fluid">        
+    	   <div class="span12 hero-unit" ><a href="index.html"><img src="img/logo.jpg" alt="Page intro graphic" /></a><img src="img/index.png" alt=""/>			        <aside class="pull-right"><a href="https://www.facebook.com/pages/Exotic-Experience/203469063013499"><img src="img/facebook.png" class="pull-right" alt=""></a><a href="http://www.youtube.com/user/4u2roos?feature=watch"><img src="img/twitter.png" class="pull-right" alt=""/></a>
+        </aside>
+        	<p>"The most unique interaction with exotic animals in Orlando!" </p>   
+    	   </div>
+  			</header> 
     
 	<section class="row-fluid">
     	<aside class="span2">
-        	<nav id="mainnav">
-    		<ul class="nav nav-list">
-            	<li class="nav-header">Welcome</li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="featured.html">Featured Friends & Events</a></li>
-				<li><a href="reservation.html">Birthdays & Reservations</a></li>
-				<li><a href="meet.html">Meet the Exotic's</a></li>
-				<li class="active"><a href="store.html">Exotic Store & Donation</a></li>
-			    <li><a href="contact.html">Contact Us</a></li>
-			</ul>
-     		</nav>         
+           <div id="nav">
+    			<ul class="nav nav-list">
+            		<li class="nav-header">Welcome</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="featured.html">Featured Friends & Events</a></li>
+					<li><a href="reservation.html">Birthdays & Reservations</a></li>
+					<li><a href="meet.html">Meet the Exotic's</a></li>
+					<li class="active"><a href="store.html">Exotic Store & Donation</a></li>
+			    	<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+                
+             <div id="birthday">        
+     	 		<a href="reservation.html"><img src="img/birthday1.jpg" class="pull-left" alt="birthday"></a>
+         	 </div>
+     		 </div>         
      	</aside>
-    </section>
-    <section class="row-fluid">
-    	<article class="span6 offset3">
-		 <a href="checkout.html" class="btn btn-warning">Checkout</a>
-	</article>
-    </section>
-	<footer class="span2 offset1">
-     	&copy; 2013 Exotic Experience Website by: Ali Ki 
-     </footer>
+        	<div id="featured">
+         		<a href="featured.html"><img src="img/featured.jpg" alt="" class="pull-right"></a>
+         	</div>
+        
+<section class="span6 offset1">
+        <h1 id="f">Exotic Store</h1>
+        <p class="lead">Our current selection...</p>
+    <article>
+        <a href="checkout.html"><img src="img/shirt1.jpg" class="img-polaroid" alt=""></a>
+        <p><em>Front View</em></p>
+    </article>
+</section>
+</section>
+    
+<section class="row-fluid">
+  <div class="span8 offset3">
+     <div class="row-fluid">
+            	<!--Nested rows -->
+         <div id="liam" class="span3">
+                	<h3>Liam Shirt</h3>
+                    <img src="img/liamshirt.jpg" class="img-polaroid" alt="liam shirt">
+		<div class="input-append">
+    			<input class="span2" id="appendedDropdownButton" type="text">
+    		<div class="btn-group">
+    			<button class="btn dropdown-toggle" data-toggle="dropdown">
+   	 		Select
+    			<span class="caret"></span>
+    			</button>
+                <ul class="dropdown-menu">
+                    <li><a href="checkout.html">Small-$15.99</a></li>
+                    <li><a href="checkout.html">Medium-$15.99</a></li>
+                    <li><a href="checkout.html">Large-$15.99</a></li>
+                 </ul>
+    		</div>
+    	</div>
+ 	</div>
+    <div id="lovebug" class="span3">
+            <h3>Love Bug Shirt</h3>
+            <img src="img/lovebugshirt.jpg" class="img-polaroid" alt="lovebug shirt">
+       <div class="input-append">
+   		 	<input class="span2" id="appendedDropdownButton1" type="text">
+    	<div class="btn-group">
+    		<button class="btn dropdown-toggle" data-toggle="dropdown">
+    		Select
+    		<span class="caret"></span>
+    		</button>
+       		<ul class="dropdown-menu">
+            	<li><a href="checkout.html">Small-$15.99</a></li>
+           		<li><a href="checkout.html">Medium-$15.99</a></li>
+      			<li><a href="checkout.html">Large-$15.99</a></li>
+        	</ul>		 
+        </div>
+      </div>
+    </div>
+   
+    <div id="poppi" class="span3">
+              <h3>Poppi Shirt</h3>
+                   <img src="img/poppishirt.jpg" class="img-polaroid" alt="poppi shirt">
+                   <div class="input-append">
+   			       <input class="span2" id="appendedDropdownButton2" type="text">
+    		<div class="btn-group">
+    				<button class="btn dropdown-toggle" data-toggle="dropdown">
+    				Select
+    				<span class="caret"></span>
+    				</button>
+       				<ul class="dropdown-menu">
+            			<li><a href="checkout.html">Small-$15.99</a></li>
+            			<li><a href="checkout.html">Medium-$15.99</a></li>
+            			<li><a href="checkout.html">Large-$15.99</a></li>
+        			</ul>
+        	</div>
+        </div>
+        <a href="checkout.html" class="btn btn-warning pull-right">Checkout</a> 
+      </div>
+   </div>
+        
+<section id="donation1">
+          <h2>Exotic Donation</h2>
+          <p class="lead text-error"><em>Want to make a difference?</em></p>
+          <p class="lead">Here at Exotic Experience we like to share the LOVE! If you also want to "share the love",
+          please donate to a cause below.</p>
+     <div class="input-append">
+   				 	<input class="span2" id="appendedDropdownButton3" type="text">
+    	<div class="btn-group">
+    				<button class="btn dropdown-toggle" data-toggle="dropdown">
+    				Select
+    				<span class="caret"></span>
+    				</button>
+       				 <ul class="dropdown-menu">
+            			<li><a href="https://support.worldwildlife.org/site/SPageServer?pagename=donate_monthly&amp;s_src=AWG1312SS912">World Wild Life Fund</a></li>
+            			<li><a href="http://www.gofundme.com/2h5m6k">Donate To Exotic Experience</a></li>
+            			<li><a href="http://www.escapefoundation.org/donate/">Escape Foundation</a></li>
+        			</ul>
+        </div>
+    </div>
+</section>     
+</div>   
+</section>    
+	
+ <div id="stickey_footer">
+ <!-- Begin Footer Menu -->
+    <ul id="footer_menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="featured.html">Featured Friends &amp; Events</a>
+         <li><a href="reservation.html">Birthdays &amp; Reservations</a>
+         <li><a href="meet.html">Meet the Exotic's</a>
+         <li><a href="store.html"><span>Exotic Store &amp; Donation</span></a>
+         <li><a href="contact.html">Contact Us</a>
+     </ul>
+      
+ &copy; 2013 Exotic Experience All Rights Reserved
+ Website by: Ali Ki 
+</div>
 </div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+  var navigation = responsiveNav("#nav");
+</script>
 </body>
 </html>

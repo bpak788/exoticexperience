@@ -240,7 +240,9 @@
 
   $.fn.button.Constructor = Button
 
-
+  $('#img').popover(options)
+  $('#new').popover('toggle')
+ 
  /* BUTTON NO CONFLICT
   * ================== */
 

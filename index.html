@@ -7,17 +7,21 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive-nav.css">
+<script src="js/responsive-nav.js"></script>
 </head>
 <body>
 <div class="container-fluid">
 	<header class="row-fluid">        
-    	<h1 class="span12"><img src="img/logo.jpg" alt="Page intro graphic" /></h1>
-        <p>"The most unique interaction with exotic animals in Orlando!" </p>
-    </header>
-    
-	<section class="row-fluid">
-    	<aside class="span2">
-        	<nav id="mainnav">
+    	<div class="span12 hero-unit" ><img src="img/logo.jpg" alt="Page intro graphic" /><img src="img/index.png" alt=""/>
+        <aside class="pull-right"><a href="https://www.facebook.com/pages/Exotic-Experience/203469063013499"><img src="img/facebook.png" class="pull-right" alt=""></a><a href="http://www.youtube.com/user/4u2roos?feature=watch"><img src="img/twitter.png" class="pull-right" alt=""/></a>
+        </aside>
+        	<p>"The most unique interaction with exotic animals in Orlando!" </p>   
+    	</div>
+   	</header> 
+<section class="row-fluid">
+    <aside class="span2">
+        <div id="nav">
     		<ul class="nav nav-list">
             	<li class="nav-header">Welcome</li>
 				<li class="active"><a href="index.html">Home</a></li>
@@ -27,73 +31,111 @@
 				<li><a href="store.html">Exotic Store & Donation</a></li>
 			    <li><a href="contact.html">Contact Us</a></li>
 			</ul>
-     		</nav>         
-     	</aside>
-         <section class="span6 offset1">
-         	<h1>Welcome!</h1>
-            <img src="img/kissy.jpg" alt="" class="img-polaroid"/>
-         </section>
-    </section>
-	<!--offset will add extra blank columns to section -->
-    <section class="row-fluid">
+     	</div>
+            
+        <div id="birthday">        
+     		 <a href="reservation.html"><img src="img/birthday1.jpg" class="pull-left" alt="birthday"></a>
+        </div>
+     </aside>
+
+<section class="span6 offset1">
+         	<h1 id="f">Welcome!</h1>
+            <img src="img/kissy3.jpg" alt="" class="img-polaroid"/>
+        <div id="button">
+        	<a href="reservation.html" class="btn btn-warning btn-large">Reserve Now!</a>
+        </div>
+</section>
+
+         <div id="featured">
+    	     <a href="featured.html"><img src="img/featured.jpg" alt="" class="pull-right"></a>
+         </div> 
+</section>
+	
+<section class="row-fluid">
     	<article class="span6 offset3">
-            <h2>Have you kissed a Kangaroo today?</h2>
-            <a href="reservation.html" class="btn btn-warning btn-large">Reserve your spot now!</a>
             <p>Here at Exotic Animal Experience in Orland Fl. we strive to create
             a unique adventure for you and your family! We take pride in our
             animals and handlers, assuring you a safe, fun, and educational experience.
             We want to welcome you to schedule your one-on-one encounter<a href="reservation.html"> today!</a> 
             </p>
          </article>
-     </section>
-     <section class="row-fluid">
-    	<div class="span6 offset3">
-        	<div class="row-fluid">
-            	<!--Nested rows -->
-                <div id="about" class="span6">
-                	<h3>About Us</h3>
-                    <blockquote>
-                    <p>Here at Exotic Experience in Orlando Fl. our mission is simple: Passion, Fun, & Education. 
-                    We are a premier family Experience offering unique and one-on-one interaction with lovable, kissable 
-                    creatures that can’t wait to meet you!
-                    </p>
-                    <img src="img/leslie.jpg" alt=""/> -Leslie
-                    </blockquote>
-                 </div>
-                <div class="span6">
-                	<h3>Visit Us</h3>
-                   	   <h4>On your Exotic Experience you may encounter...</h4>
-        
-       						<ul>
-            					<li>Curious Kangaroos</li>
-            					<li>Leaping Lemurs</li>
-            					<li>Kissable Kinkajou</li>
-            					<li>Mystical Muntjac Deer</li>
-            					<li>Playful Pot-Bellied Pigs</li>
-            					<li>Bouncing Bunnies</li>
-            					<li>Gallant mini horse, gypsy horses, and<a href="meet.html"> more!</a></li>         					
-                           </ul>
-                           
-                    <p>Upon arival at our location you will be greated and given a tour! You will
-            		be able to hold, pet and feed certian friends. Most importantly learn about how we
-            		can help save endangered species!</p> 
-            		<img src="img/poppi.jpg" alt="" class="img-polaroid"/>
-           		</div>
-            </div>
-         </div>
-     </section>
+</section>
      
-     <section class="row-fluid">
-     	<div class="span4 visible-desktop">This is visible on the desktop</div>
-        <div class="span4 visible-tablet">This is visible on the tablet</div>
-        <div class="span4 visible-phone">This is visible on the phone</div>
-        </section>
-        
-     <footer class="span2 offset10">
-     	&copy; 2013 Exotic Experience Website by: Ali Ki 
-     </footer>
- </div>
+<section class="row-fluid">
+   <div class="span6 offset3">
+     	<div class="row-fluid">
+            <div class="accordion" id="accordion2">
+				<div class="accordion-group">
+					<div class="accordion-heading">
+						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+							<h3>About Us</h3>
+						</a>
+					</div>
+					<div id="collapseOne" class="accordion-body collapse in">
+						<div class="accordion-inner">
+							<blockquote class="text-info">
+                    			<p>Here at Exotic Experience in Orlando Fl. our mission is simple: Passion, Fun, & Education. 
+                     We are a premier family Experience offering unique and one-on-one interaction with lovable, kissable 
+                     creatures that can’t wait to meet you!
+                    			</p>
+                                <img src="img/leslie.jpg" class="pull-right" alt=""/>
+                                <small class="pull-right"><cite title="Source Title">Leslie-Ann Rush</cite></small>
+                    		</blockquote>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+							<h3>Visit Us</h3>
+							</a>
+					</div>
+					<div id="collapseTwo" class="accordion-body collapse">
+							<div class="accordion-inner">
+								<h4>On your Exotic Experience you may encounter...</h4>
+                                    <ul>
+                                        <li>Curious Kangaroos</li>
+                                        <li>Leaping Lemurs</li>
+                                        <li>Kissable Kinkajou</li>
+                                        <li>Mystical Muntjac Deer</li>
+                                        <li>Playful Pot-Bellied Pigs</li>
+                                        <li>Bouncing Bunnies</li>
+                                        <li>Gallant mini horse, gypsy horses, and<a href="meet.html"> more!</a></li>         					
+                                   </ul>
+                           
+                                <p>Upon arival at our location you will be greated and given a tour! You will
+                                be able to hold, pet and feed certian friends. Most importantly learn about how we
+                                can help save endangered species!</p> 
+                                <img src="img/poppi.jpg" alt="" class="img-polaroid"/>
+							</div>
+						</div>
+					</div>
+				</div>
+ 			</div>
+ 		</div>  
+ 		<div id="donation">
+        	 <a href="store.html"><img src="img/donation.jpg" alt="" class="pull-right"></a>
+ 		</div>          	
+</section>
+     
+     <div id="stickey_footer">
+ <!-- Begin Footer Menu -->
+        <ul id="footer_menu">
+             <li><a href="index.html"><span>Home</span></a></li>
+             <li><a href="featured.html">Featured Friends &amp; Events</a>
+             <li><a href="reservation.html">Birthdays &amp; Reservations</a>
+             <li><a href="meet.html">Meet the Exotic's</a>
+             <li><a href="store.html">Exotic Store &amp; Donation</a>
+             <li><a href="contact.html">Contact Us</a>
+         </ul>
+         &copy; 2013 Exotic Experience All Rights Reserved
+         Website by: Ali Ki 
+</div>    
+</div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+  var navigation = responsiveNav("#nav");
+</script>
 </body>
 </html>
